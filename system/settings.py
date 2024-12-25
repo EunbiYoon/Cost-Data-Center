@@ -21,13 +21,10 @@ BASE_DIR = Path(__file__).resolve().parent.parent
 # Quick-start development settings - unsuitable for production
 # See https://docs.djangoproject.com/en/4.1/howto/deployment/checklist/
 
-# SECURITY WARNING: keep the secret key used in production secret!
-SECRET_KEY = 'django-insecure-ty%zw#25!^hepk@irc_m)47=^_!t8lp@^0#g**4+nwerwer_eddcy0m1'
-
-# SECURITY WARNING: don't run with debug turned on in production!
-DEBUG = True
-
-ALLOWED_HOSTS = ['10.225.2.85','localhost','127.0.0.1']
+# Set in Environment
+SECRET_KEY = os.environ.get("SECRET_KEY")
+DEBUG = os.environ.get("DEBUG", "False").lower() == "True" 
+ALLOWED_HOSTS = os.environ.get("ALLOWED_HOSTS").split(" ")
 
 
 # Application definition
@@ -86,8 +83,10 @@ DATABASES = {
     }
 }
 
+
 # overwrite database
-DATABASES["default"]=dj_database_url.parse("postgresql://cost_data_center_user:9hOd4ku0rMZPZGZG0OwEUMDQAoCnnMdL@dpg-ctlt0p1opnds73fbkprg-a.singapore-postgres.render.com/cost_data_center")
+database_url=os.environ.get("DATABASE_URL")
+DATABASES["default"]=dj_database_url.parse(database_url)
 
 
 # Password validation
