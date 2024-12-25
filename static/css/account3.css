@@ -1,0 +1,61 @@
+.navbar{
+    background-color: #007BFF;
+}
+
+.register-login{
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    margin-top:30px;
+    grid-gap: 20px;
+}
+.register{
+    grid-column:1;
+    border:1px solid #007BFF;
+    padding:20px;
+}
+.login{
+    grid-column:2;
+    border:1px solid #007BFF;
+    padding:20px;
+}
+
+h2{
+    margin-bottom:0;
+    text-align: center;
+    color:#007BFF
+}
+p{
+    color:#007BFF;
+}
+
+h6{
+    color:#007BFF;
+    font-size: 0.8rem;
+}
+label{
+    margin-top:10px;
+    margin-bottom:0;
+}
+
+input{
+    color: #007BFF !important;
+    font-weight: 700 !important;
+}
+input::placeholder{
+    color:rgb(185, 185, 185) !important;
+    font-weight: 400 !important;
+}
+
+.register-login .btn{
+    margin-top:10px !important;  
+    background-color: #007BFF !important;
+}
+
+.resetbutton{
+    background-color: white !important;
+    color:#007BFF;
+    border:none;
+    text-align: right;
+    margin-top:30px;
+    text-decoration: underline;
+}

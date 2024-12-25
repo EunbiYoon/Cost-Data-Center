@@ -1,0 +1,90 @@
+{% extends 'base.html' %}
+
+{% block title %}Login{% endblock %}
+
+{% block container %}
+    <div class="container">
+        {% load static %}
+        <link rel="stylesheet" href="{% static 'css/account3.css' %}"> 
+        <div class="register-login">
+            <div class="register">
+                <h2>Sign Up</h2>
+                {% for message in messages %}
+                    {% if 'register' in message.extra_tags %}
+                        <p class="alert alert-warning" style="margin:10px 0 0; color:#007BFF; background-color:lightcyan; border:none; font-weight: 700;">Error : {{message}}</p>
+                    {% endif %}
+                {% endfor %}
+                <!-- <p clas="alert alert-warning">Sign Up</p> -->
+                <form action="{% url 'register_url' %}" method="POST">
+                    {% csrf_token %}
+                    <div class="register-column">
+                        <label for="form-label" class="form-label">First Name</label>
+                        <input type="text" class="form-control" name="fname" placeholder="Josh">
+                    </div>
+                    <h6>First Name match with New EP systems</h6>
+    
+                    <div class="register-column">
+                        <label for="form-label" class="form-label">Last Name</label>
+                        <input type="text" class="form-control" name="lname" placeholder="Yoon">
+                    </div>
+                    <h6>Last Name match with New EP systems</h6>
+    
+                    <div class="register-column">
+                        <label for="form-label" class="form-label">Username</label>
+                        <input type="text" class="form-control" name="username" placeholder="joy2307">
+                    </div>
+                    <h6>Username is for login</h6>
+    
+                    <div class="register-column">
+                        <label for="form-label" class="form-label">Email</label>
+                        <input type="text" class="form-control" name="email" placeholder="josh2.yoon@lge.com">
+                    </div>
+                    <h6>LG email address(@lge.com) required</h6>
+    
+                    <div class="register-column">
+                        <label for="form-label" class="form-label">Password</label>
+                        <input type="password" class="form-control" name="pass1" placeholder="Eby07!17!">
+                    </div>
+                    <h6>Password more than 8 digits and avoid same with username</h6>
+    
+                    <div class="register-column">
+                        <label class="form-label">Confirm Password</label>
+                        <input type="password" class="form-control" name="pass2" placeholder="Eby07!17!">
+                    </div>
+                    <div class="text-center">
+                        <button type="submit" class="btn btn-primary">Sign Up</button>
+                    </div>
+                </form>
+            </div>
+            <div class="login">
+                <h2>Login</h2>
+                {% for message in messages %}
+                    {% if 'login' in message.extra_tags %}
+                        <p class="alert alert-danger">{{message}}</p>
+                    {% endif %}
+                {% endfor %}
+                <form action="{% url 'login_url' %}" method="POST">
+                    <div class="login-banner">
+                        {% csrf_token %}
+                        <div class="login-column">
+                            <label for="form-label" class="form-label">Username</label>
+                            <input type="text" class="form-control" name="username" placeholder="joy2307">
+                        </div>
+                        <div class="login-column">
+                            <label for="exampleInputPassword1" class="form-label">Password</label>
+                            <input type="password" class="form-control" id="exampleInputPassword1" name="password" placeholder="Eby07!17!">
+                        </div>
+                    </div>
+                    <div class="text-center">
+                        <button type="submit" class="btn btn-primary loginbutton">Login</button>
+                    </div>
+                </form>
+                <form method="post" action="{% url 'password_reset' %}" >
+                    {% csrf_token %}
+                    {{ form.as_p }}
+                    <right><button class="resetbutton" type="submit">Forget Username/Password</button></right>
+                </form>
+            </div>
+        </div>
+    </div>
+{% endblock %}
