@@ -15,7 +15,7 @@
             <a href="{% static file_result %}" download style="border-left:1px solid lightgray; border-right:1px solid lightgray; padding:0 10px"> Total Result Download</a>
             <a href="{% url 'detail_comment_url' post_detail.id  %}" style="border-right:1px solid lightgray; padding:0 10px">Comment</a>
             <a href="{% url 'category_bom_url' %}" style="padding: 0 10px; border-right:1px solid lightgray; ">Dashboard</a>
-            <a href="{% url 'home_url' %}" style="padding: 0 10px">Home</a>
+            <a href="{% url 'costhome_url' %}" style="padding: 0 10px">Home</a>
         </div>
     </div>
     <form method="post" action="{% url 'detail_bom_url' post_detail.id %}" style="margin: 0 200px;">

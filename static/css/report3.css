@@ -108,14 +108,14 @@ body{
 }
 
 
-/*home.html*/
-/*home.html - top container*/
+/*cost_home.html*/
+/*cost_home.html - top container*/
 .home-name{
   text-align: center;
   font-size: 3rem;
 }
 
-/*home.html - main container*/
+/*cost_home.html - main container*/
 .home-container{
   margin:50px;
   display: grid;

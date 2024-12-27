@@ -152,6 +152,86 @@
         "documentation": {}
     },
     {
+        "label": "models",
+        "importPath": "django.db",
+        "description": "django.db",
+        "isExtraImport": true,
+        "detail": "django.db",
+        "documentation": {}
+    },
+    {
+        "label": "migrations",
+        "importPath": "django.db",
+        "description": "django.db",
+        "isExtraImport": true,
+        "detail": "django.db",
+        "documentation": {}
+    },
+    {
+        "label": "models",
+        "importPath": "django.db",
+        "description": "django.db",
+        "isExtraImport": true,
+        "detail": "django.db",
+        "documentation": {}
+    },
+    {
+        "label": "models",
+        "importPath": "django.db",
+        "description": "django.db",
+        "isExtraImport": true,
+        "detail": "django.db",
+        "documentation": {}
+    },
+    {
+        "label": "models",
+        "importPath": "django.db",
+        "description": "django.db",
+        "isExtraImport": true,
+        "detail": "django.db",
+        "documentation": {}
+    },
+    {
+        "label": "migrations",
+        "importPath": "django.db",
+        "description": "django.db",
+        "isExtraImport": true,
+        "detail": "django.db",
+        "documentation": {}
+    },
+    {
+        "label": "models",
+        "importPath": "django.db",
+        "description": "django.db",
+        "isExtraImport": true,
+        "detail": "django.db",
+        "documentation": {}
+    },
+    {
+        "label": "migrations",
+        "importPath": "django.db",
+        "description": "django.db",
+        "isExtraImport": true,
+        "detail": "django.db",
+        "documentation": {}
+    },
+    {
+        "label": "models",
+        "importPath": "django.db",
+        "description": "django.db",
+        "isExtraImport": true,
+        "detail": "django.db",
+        "documentation": {}
+    },
+    {
+        "label": "models",
+        "importPath": "django.db",
+        "description": "django.db",
+        "isExtraImport": true,
+        "detail": "django.db",
+        "documentation": {}
+    },
+    {
         "label": "TestCase",
         "importPath": "django.test",
         "description": "django.test",
@@ -328,6 +408,14 @@
         "documentation": {}
     },
     {
+        "label": "redirect",
+        "importPath": "django.shortcuts",
+        "description": "django.shortcuts",
+        "isExtraImport": true,
+        "detail": "django.shortcuts",
+        "documentation": {}
+    },
+    {
         "label": "render",
         "importPath": "django.shortcuts",
         "description": "django.shortcuts",
@@ -357,78 +445,6 @@
         "description": "django.shortcuts",
         "isExtraImport": true,
         "detail": "django.shortcuts",
-        "documentation": {}
-    },
-    {
-        "label": "migrations",
-        "importPath": "django.db",
-        "description": "django.db",
-        "isExtraImport": true,
-        "detail": "django.db",
-        "documentation": {}
-    },
-    {
-        "label": "models",
-        "importPath": "django.db",
-        "description": "django.db",
-        "isExtraImport": true,
-        "detail": "django.db",
-        "documentation": {}
-    },
-    {
-        "label": "models",
-        "importPath": "django.db",
-        "description": "django.db",
-        "isExtraImport": true,
-        "detail": "django.db",
-        "documentation": {}
-    },
-    {
-        "label": "models",
-        "importPath": "django.db",
-        "description": "django.db",
-        "isExtraImport": true,
-        "detail": "django.db",
-        "documentation": {}
-    },
-    {
-        "label": "migrations",
-        "importPath": "django.db",
-        "description": "django.db",
-        "isExtraImport": true,
-        "detail": "django.db",
-        "documentation": {}
-    },
-    {
-        "label": "models",
-        "importPath": "django.db",
-        "description": "django.db",
-        "isExtraImport": true,
-        "detail": "django.db",
-        "documentation": {}
-    },
-    {
-        "label": "migrations",
-        "importPath": "django.db",
-        "description": "django.db",
-        "isExtraImport": true,
-        "detail": "django.db",
-        "documentation": {}
-    },
-    {
-        "label": "models",
-        "importPath": "django.db",
-        "description": "django.db",
-        "isExtraImport": true,
-        "detail": "django.db",
-        "documentation": {}
-    },
-    {
-        "label": "models",
-        "importPath": "django.db",
-        "description": "django.db",
-        "isExtraImport": true,
-        "detail": "django.db",
         "documentation": {}
     },
     {
@@ -564,93 +580,93 @@
         "documentation": {}
     },
     {
-        "label": "BaseConfig",
+        "label": "CostBaseConfig",
         "kind": 6,
-        "importPath": "base.apps",
-        "description": "base.apps",
-        "peekOfCode": "class BaseConfig(AppConfig):\n    default_auto_field = 'django.db.models.BigAutoField'\n    name = 'base'",
-        "detail": "base.apps",
+        "importPath": "cost_base.apps",
+        "description": "cost_base.apps",
+        "peekOfCode": "class CostBaseConfig(AppConfig):\n    default_auto_field = \"django.db.models.BigAutoField\"\n    name = \"cost_base\"",
+        "detail": "cost_base.apps",
         "documentation": {}
     },
     {
         "label": "PostForm",
         "kind": 6,
-        "importPath": "base.forms",
-        "description": "base.forms",
+        "importPath": "cost_base.forms",
+        "description": "cost_base.forms",
         "peekOfCode": "class PostForm(forms.ModelForm):\n    class Meta:\n        model = Comment\n        fields = ['week', 'category', 'comment_body']\nclass EditForm(forms.ModelForm):\n    class Meta:\n        model = Comment\n        fields = ['week', 'category', 'comment_body']",
-        "detail": "base.forms",
+        "detail": "cost_base.forms",
         "documentation": {}
     },
     {
         "label": "EditForm",
         "kind": 6,
-        "importPath": "base.forms",
-        "description": "base.forms",
+        "importPath": "cost_base.forms",
+        "description": "cost_base.forms",
         "peekOfCode": "class EditForm(forms.ModelForm):\n    class Meta:\n        model = Comment\n        fields = ['week', 'category', 'comment_body']",
-        "detail": "base.forms",
+        "detail": "cost_base.forms",
         "documentation": {}
     },
     {
         "label": "urlpatterns",
         "kind": 5,
-        "importPath": "base.urls",
-        "description": "base.urls",
-        "peekOfCode": "urlpatterns = [\n    path('',homeView,name='home_url'),\n    path('comment',CommentView.as_view(),name='comment_url'),\n    path('comment/<int:pk>',CommentDetailView.as_view(), name='article-detail'),\n    path('comment/add', CommentAddView.as_view(), name='add_post'),\n    path('comment/edit/<int:pk>', CommentUpdateView.as_view(), name=\"update_post\"),\n    path('comment/delete/<int:pk>/remove', CommentDeleteView.as_view(), name=\"delete_post\"),\n]",
-        "detail": "base.urls",
+        "importPath": "cost_base.urls",
+        "description": "cost_base.urls",
+        "peekOfCode": "urlpatterns = [\n    path('',CosthomeView,name='costhome_url'),\n    path('comment',CommentView.as_view(),name='comment_url'),\n    path('comment/<int:pk>',CommentDetailView.as_view(), name='article-detail'),\n    path('comment/add', CommentAddView.as_view(), name='add_post'),\n    path('comment/edit/<int:pk>', CommentUpdateView.as_view(), name=\"update_post\"),\n    path('comment/delete/<int:pk>/remove', CommentDeleteView.as_view(), name=\"delete_post\"),\n]",
+        "detail": "cost_base.urls",
         "documentation": {}
     },
     {
         "label": "CommentView",
         "kind": 6,
-        "importPath": "base.views",
-        "description": "base.views",
+        "importPath": "cost_base.views",
+        "description": "cost_base.views",
         "peekOfCode": "class CommentView(ListView):\n    template_name='comment.html'\n    ordering=['-date_added']\n    model=Comment\nclass CommentDetailView(DetailView):\n    model=Comment\n    template_name='comment_detail.html'\nclass CommentAddView(CreateView):\n    model=Comment\n    form_class=PostForm",
-        "detail": "base.views",
+        "detail": "cost_base.views",
         "documentation": {}
     },
     {
         "label": "CommentDetailView",
         "kind": 6,
-        "importPath": "base.views",
-        "description": "base.views",
+        "importPath": "cost_base.views",
+        "description": "cost_base.views",
         "peekOfCode": "class CommentDetailView(DetailView):\n    model=Comment\n    template_name='comment_detail.html'\nclass CommentAddView(CreateView):\n    model=Comment\n    form_class=PostForm\n    template_name='comment_add.html'\n    success_url=reverse_lazy('comment_url')\n    def form_valid(self, form):\n        form.instance.author = self.request.user",
-        "detail": "base.views",
+        "detail": "cost_base.views",
         "documentation": {}
     },
     {
         "label": "CommentAddView",
         "kind": 6,
-        "importPath": "base.views",
-        "description": "base.views",
+        "importPath": "cost_base.views",
+        "description": "cost_base.views",
         "peekOfCode": "class CommentAddView(CreateView):\n    model=Comment\n    form_class=PostForm\n    template_name='comment_add.html'\n    success_url=reverse_lazy('comment_url')\n    def form_valid(self, form):\n        form.instance.author = self.request.user\n        return super().form_valid(form)\nclass CommentUpdateView(UpdateView):\n    model=Comment",
-        "detail": "base.views",
+        "detail": "cost_base.views",
         "documentation": {}
     },
     {
         "label": "CommentUpdateView",
         "kind": 6,
-        "importPath": "base.views",
-        "description": "base.views",
+        "importPath": "cost_base.views",
+        "description": "cost_base.views",
         "peekOfCode": "class CommentUpdateView(UpdateView):\n    model=Comment\n    form_class=EditForm\n    template_name='comment_update.html'\n    success_url=reverse_lazy('comment_url')\nclass CommentDeleteView(DeleteView):\n    model=Comment\n    template_name='comment_delete.html'\n    success_url=reverse_lazy('comment_url')",
-        "detail": "base.views",
+        "detail": "cost_base.views",
         "documentation": {}
     },
     {
         "label": "CommentDeleteView",
         "kind": 6,
-        "importPath": "base.views",
-        "description": "base.views",
+        "importPath": "cost_base.views",
+        "description": "cost_base.views",
         "peekOfCode": "class CommentDeleteView(DeleteView):\n    model=Comment\n    template_name='comment_delete.html'\n    success_url=reverse_lazy('comment_url')",
-        "detail": "base.views",
+        "detail": "cost_base.views",
         "documentation": {}
     },
     {
-        "label": "homeView",
+        "label": "CosthomeView",
         "kind": 2,
-        "importPath": "base.views",
-        "description": "base.views",
-        "peekOfCode": "def homeView(request):\n    recent_bom = Post.objects.filter(category__name='BOM Comparison').latest('date_added')\n    recent_cost = Post.objects.filter(category__name='Cost Review').latest('date_added')\n    context={\n        'recent_bom':recent_bom.id,\n        'recent_cost':recent_cost.id\n    }\n    return render(request,'home.html', context)\nclass CommentView(ListView):\n    template_name='comment.html'",
-        "detail": "base.views",
+        "importPath": "cost_base.views",
+        "description": "cost_base.views",
+        "peekOfCode": "def CosthomeView(request):\n    recent_bom = Post.objects.filter(category__name='BOM Comparison').latest('date_added')\n    recent_cost = Post.objects.filter(category__name='Cost Review').latest('date_added')\n    context={\n        'recent_bom':recent_bom.id,\n        'recent_cost':recent_cost.id\n    }\n    return render(request,'cost_home.html', context)\nclass CommentView(ListView):\n    template_name='comment.html'",
+        "detail": "cost_base.views",
         "documentation": {}
     },
     {
@@ -694,7 +710,7 @@
         "kind": 2,
         "importPath": "member.views",
         "description": "member.views",
-        "peekOfCode": "def loginView(request):\n    if request.method==\"POST\":\n        username=request.POST['username']\n        password=request.POST['password']\n        user=auth.authenticate(username=username, password=password)\n        if user is not None:\n            auth.login(request, user)\n            return redirect('home_url')\n        else:\n            messages.error(request,\"Wrong Credentials\", extra_tags='login')",
+        "peekOfCode": "def loginView(request):\n    if request.method==\"POST\":\n        username=request.POST['username']\n        password=request.POST['password']\n        user=auth.authenticate(username=username, password=password)\n        if user is not None:\n            auth.login(request, user)\n            return redirect('costhome_url')\n        else:\n            messages.error(request,\"Wrong Credentials\", extra_tags='login')",
         "detail": "member.views",
         "documentation": {}
     },
@@ -712,7 +728,7 @@
         "kind": 2,
         "importPath": "member.views",
         "description": "member.views",
-        "peekOfCode": "def logoutView(request):\n    auth.logout(request)\n    return redirect('home_url')",
+        "peekOfCode": "def logoutView(request):\n    auth.logout(request)\n    return redirect('costhome_url')",
         "detail": "member.views",
         "documentation": {}
     },
@@ -730,16 +746,16 @@
         "kind": 5,
         "importPath": "quality.urls",
         "description": "quality.urls",
-        "peekOfCode": "urlpatterns = [\n    path('',homeView,name='qualityhome_url')\n]",
+        "peekOfCode": "urlpatterns = [\n    path('',qualtiyhomeView,name='qualityhome_url')\n]",
         "detail": "quality.urls",
         "documentation": {}
     },
     {
-        "label": "homeView",
+        "label": "qualtiyhomeView",
         "kind": 2,
         "importPath": "quality.views",
         "description": "quality.views",
-        "peekOfCode": "def homeView(request):\n    return render(request, 'quality_home.html')",
+        "peekOfCode": "def qualtiyhomeView(request):\n    return redirect('costhome_url')",
         "detail": "quality.views",
         "documentation": {}
     },
@@ -919,7 +935,7 @@
         "kind": 5,
         "importPath": "system.settings",
         "description": "system.settings",
-        "peekOfCode": "INSTALLED_APPS = [\n    'jazzmin',\n    'django.contrib.admin',\n    'django.contrib.auth',\n    'django.contrib.contenttypes',\n    'django.contrib.sessions',\n    'django.contrib.messages',\n    'django.contrib.staticfiles',\n    'base',\n    'member',",
+        "peekOfCode": "INSTALLED_APPS = [\n    'jazzmin',\n    'django.contrib.admin',\n    'django.contrib.auth',\n    'django.contrib.contenttypes',\n    'django.contrib.sessions',\n    'django.contrib.messages',\n    'django.contrib.staticfiles',\n    'cost_base',\n    'member',",
         "detail": "system.settings",
         "documentation": {}
     },
@@ -1063,7 +1079,7 @@
         "kind": 5,
         "importPath": "system.urls",
         "description": "system.urls",
-        "peekOfCode": "urlpatterns = [\n    path('admin/', admin.site.urls),\n    path('', include('base.urls')),\n    path('report/', include('report.urls')),\n    path('accounts/', include('member.urls')),\n    path('quality/', include('quality.urls')),\n]",
+        "peekOfCode": "urlpatterns = [\n    path('admin/', admin.site.urls),\n    path('cost/', include('cost_base.urls')),\n    path('cost/report/', include('report.urls')),\n    path('cost/accounts/', include('member.urls')),\n    path('quality/', include('quality.urls')),\n]",
         "detail": "system.urls",
         "documentation": {}
     },
