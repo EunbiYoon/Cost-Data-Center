@@ -32,16 +32,16 @@ ALLOWED_HOSTS = ['10.225.2.85','localhost','127.0.0.1']
 # Application definition
 INSTALLED_APPS = [
     'jazzmin',
+    'user',
+    'CostData.cost_base',
+    'CostData.report',
+    'CostData.quality',
     'django.contrib.admin',
     'django.contrib.auth',
     'django.contrib.contenttypes',
     'django.contrib.sessions',
     'django.contrib.messages',
     'django.contrib.staticfiles',
-    'cost_base',
-    'member',
-    'report',
-    'quality'
 ]
 
 MIDDLEWARE = [
